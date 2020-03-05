@@ -2,7 +2,7 @@
 
 ## What's in the box?
 
-This project is an Ansible inventory for loading an OpenShift cluster with some frequently used projects, apps and tools on a Red Hat Open Innovation Lab residencies. Using the `openshift-applier`, cluster content is loaded from templates and param files in a repeatable, config-as-code way.
+-This project is an Ansible inventory for loading an OpenShift cluster with some frequently used projects, apps and tools on a Red Hat Open Innovation Lab residencies. Using the `openshift-applier`, cluster content is loaded from templates and param files in a repeatable, config-as-code way.
 
  Running this Ansible inventory will first create three project namespaces: `labs-ci-cd`, `labs-dev` and `labs-test`. Subsequently it will create a bunch of commonly used `ci-cd-tools` such as Jenkins, Nexus and Sonar. It will also create a collection of `jenkins-slaves` that can be used in builds such as `npm`, `maven` and `golang` to name a few. Apps can be added also by applying their `Jenkinsfile` as a buildConfig with an example (java-app) is included as a reference.
 
